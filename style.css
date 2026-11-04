@@ -58,3 +58,25 @@ body > main {
         }
     }
 }
+
+ul.publications {
+    > li::marker {
+        content: "📄";
+    }
+
+    > li.thesis::marker {
+        content: "📔"
+    }
+
+    > li {
+        padding-left: 8px;
+
+        > a > strong {
+            font-weight: 300;
+        }
+    }
+}
+
+.authors {
+    font-size: 0.8rem;
+}
