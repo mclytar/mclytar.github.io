@@ -1,0 +1,9 @@
+.warn {
+    border-left: solid var(--pico-border-radius) var(--pico-color-amber);
+}
+
+.warn::before {
+    content: '⚠️';
+    margin-left: -4px;
+    margin-right: 4px;
+}
