@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <title>Gianluca Brian</title>
   </head>
   <body>
-    <header>
+    <header class="container">
         <nav>
             <ul>
                 <li><a href="/"><strong>Gianluca Brian</strong></a></li>
@@ -23,12 +23,33 @@
                 <li><a href="/cv.html">CV</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <article class="warn">This is just a temporary page, the rest of the site is still in construction.</article>
-        <h1>About Me</h1>
-        <p>I am a postdoctoral researcher in cryptography, at the intersection between theory and practice. My research interests include implementation security, side-channel attacks and prevention, post-quantum cryptography, and constructive cryptography, with focus on composability and modular design.</p>
-        <p>I also enjoy writing software for computers and embedded devices, using best practices in software engineering and keeping my code simple, modular, efficient, and easy to maintain and to improve. I have experience with many programming languages, including Assembly Languages (x86, ARM, AVR), Rust, C++, C, Python, and with microcontroller programming, including ARM Cortex and Atmel ATMega.</p>
+    </header>  
+    <main class="container">
+        <aside>
+            <div>
+                <img src="assets/Gianluca_2026_Klaus_Mai_DSC_2653.jpg" alt="Me">
+                <span>Picture by <a href="https://www.klausmai.de/" target="_blank">Klaus Mai</a> (c) 2026</span>
+            </div>
+            <div>
+                <strong>Gianluca Brian</strong><br>
+                <span>Applied cryptographer</span><br>
+                <br>
+                <details class="dropdown">
+                    <summary>Contacts</summary>
+                    <ul dir="rtl">
+                        <li dir="ltr"><code>&lt;name&gt;.&lt;surname&gt;.94&lt;at&gt;gmail.com</code></li>
+                        <li dir="ltr">GitHub <code>mclytar</code></li>
+                        <li dir="ltr">LinkedIn <code>gianluca-brian</code></li>
+                    </ul>
+                </details>
+            </div>
+        </aside>
+        <section>
+            <article class="warn">This is just a temporary page, the rest of the site is still in construction.</article>
+            <h1>About Me</h1>
+            <p>I am a postdoctoral researcher in cryptography, at the intersection between theory and practice. My research interests include implementation security, side-channel attacks and prevention, post-quantum cryptography, and constructive cryptography, with focus on composability and modular design.</p>
+            <p>I also enjoy writing software for computers and embedded devices, using best practices in software engineering and keeping my code simple, modular, efficient, and easy to maintain and to improve. I have experience with many programming languages, including Assembly Languages (x86, ARM, AVR), Rust, C++, C, Python, and with microcontroller programming, including ARM Cortex and Atmel ATMega.</p>
+        </section>
     </main>
   </body>
 </html>

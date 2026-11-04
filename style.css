@@ -7,3 +7,54 @@
     margin-left: -4px;
     margin-right: 4px;
 }
+
+body > main {
+    > aside {
+        display: flex;
+
+        > div {
+            margin: 12px;
+        }
+
+        > div:first-child {
+            display: flex;
+            flex-direction: column;
+
+            > img {
+                width: 128px;
+                border-radius: 64px;
+                margin: auto;
+            }
+            > span {
+                font-size: 0.8em;
+                font-weight: 300;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+
+    > section {
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body > main {
+        display: flex;
+
+        > aside {
+            width: 320px;
+            flex-direction: column;
+            flex-shrink: 0;
+            margin-right: 16px;
+
+            > div:first-child {
+                > img {
+                    width: 256px;
+                    border-radius: 128px;
+                }
+            }
+        }
+    }
+}
